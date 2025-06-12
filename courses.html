@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="courses">Courses</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">The Best <span>Team Learning</span></a>
+
+      <!-- Hamburger button -->
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link" data-translate="home">Home</a>
+        <a href="about.html" class="nav-link" data-translate="about">About</a>
+        <a href="courses.html" class="nav-link active" data-translate="courses">Courses</a>
+        <a href="questions.html" class="nav-link" data-translate="questions">Question Bank</a>
+        <a href="contact.html" class="nav-link" data-translate="contact">Contact</a>
+
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <button id="lang-ar" class="lang-btn">AR</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title" data-translate="course_intro">Start Learning Web Development</h1>
+      <p class="hero-subtitle" data-translate="course_desc">Explore our free courses and download the resources</p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title" data-translate="available_courses">Available Courses</h2>
+
+      <div class="features-grid">
+        <!-- HTML Course -->
+        <div class="feature-card">
+          <i class="fab fa-html5" style="color: #e44d26;"></i>
+          <h3>HTML</h3>
+          <p data-translate="html_desc">Learn the structure of web pages using HTML5.</p>
+          <br>
+          <a href="WEB Design(HTML).pdf" class="btn btn-primary" target="_blank" data-translate="download_pdf">Download PDF</a>
+        </div>
+
+        <!-- CSS Course -->
+        <div class="feature-card">
+          <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+          <h3>CSS</h3>
+          <p data-translate="css_desc">Style your web pages and build modern UIs with CSS.</p>
+          <br>
+          <a href="Web Design(CSS).pdf" class="btn btn-primary" target="_blank" data-translate="download_pdf">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span data-translate="copyright">2025 The Best Team Learning. All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+
+</body>
+</html>

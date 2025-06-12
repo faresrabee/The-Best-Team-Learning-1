@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="about">About Us</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">The Best <span>Team Learning</span></a>
+
+      <!-- Hamburger button (for small screens) -->
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      
+      <!-- ✅ أضف id هنا -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link" data-translate="home">Home</a>
+        <a href="about.html" class="nav-link active" data-translate="about">About</a>
+        <a href="courses.html" class="nav-link" data-translate="courses">Courses</a>
+        <a href="questions.html" class="nav-link" data-translate="questions">Question Bank</a>
+        <a href="contact.html" class="nav-link" data-translate="contact">Contact</a>
+
+        <div class="language-switcher">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <button id="lang-ar" class="lang-btn">AR</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title" data-translate="about_us">About the Platform</h2>
+      <p style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem;" data-translate="about_description">
+        This platform was developed to make programming education simple, accessible, and interactive for everyone.
+      </p>
+
+      <div class="feature-card" style="margin-bottom: 2rem;">
+        <h3 style="color: #0077cc; margin-bottom: 0.5rem;" data-translate="supervision">Under Supervision</h3>
+        <p style="font-size: 1.2rem; font-weight: bold; color: #1dbf73;">Dr. Noha Shipriaa</p>
+      </div>
+
+      <div>
+        <h3 class="section-title" data-translate="developers">Developers</h3>
+        <div class="features-grid">
+          <div class="feature-card"><i class="fas fa-user"></i> Fares Rabee</div>
+          <div class="feature-card"><i class="fas fa-user"></i>3alaa Mmasry</div>
+          <div class="feature-card"><i class="fas fa-user"></i>Mohamed Mahmoud</div>
+          <div class="feature-card"><i class="fas fa-user"></i> Omar Jalal</div>
+          <div class="feature-card"><i class="fas fa-user"></i> Samar EL Shimy</div>
+          <div class="feature-card"><i class="fas fa-user"></i> Hala Abd El Gaffar</div>
+          <div class="feature-card"><i class="fas fa-user"></i> DaliDa</div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span data-translate="copyright">2025 The Best Team Learning. All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+</body>
+</html>

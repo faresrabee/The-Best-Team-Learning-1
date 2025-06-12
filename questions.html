@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question Bank - EduPlatform</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">The Best <span>Team Learning</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link" data-translate="home">Home</a>
+        <a href="about.html" class="nav-link" data-translate="about">About</a>
+        <a href="courses.html" class="nav-link" data-translate="courses">Courses</a>
+        <a href="questions.html" class="nav-link active" data-translate="questions">Question Bank</a>
+        <a href="contact.html" class="nav-link" data-translate="contact">Contact</a>
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="questions-page">
+    <div class="container">
+      <h1 class="page-title" data-translate="question_bank_title">Programming Question Bank</h1>
+
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <h2 data-translate="basic_concepts">Basic Programming Concepts</h2>
+          <p data-translate="quiz_instruction">Test your knowledge with these fundamental questions</p>
+        </div>
+
+        <div class="quiz-questions">
+          <!-- Question 1 -->
+          <div class="question-card" data-question="1">
+            <div class="question">
+              <span>1.</span>
+              <p data-translate="q1">What does HTML stand for?</p>
+            </div>
+            <div class="options">
+              <label><input type="radio" name="q1" value="a"> <span data-translate="q1_opt_a">Hyper Text Markup Language</span></label>
+              <label><input type="radio" name="q1" value="b"> <span data-translate="q1_opt_b">Home Tool Markup Language</span></label>
+              <label><input type="radio" name="q1" value="c"> <span data-translate="q1_opt_c">Hyperlinks and Text Markup Language</span></label>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="question-card" data-question="2">
+            <div class="question">
+              <span>2.</span>
+              <p data-translate="q2">Which CSS property is used to change the text color?</p>
+            </div>
+            <div class="options">
+              <label><input type="radio" name="q2" value="a"> <span data-translate="q2_opt_a">text-color</span></label>
+              <label><input type="radio" name="q2" value="b"> <span data-translate="q2_opt_b">font-color</span></label>
+              <label><input type="radio" name="q2" value="c"> <span data-translate="q2_opt_c">color</span></label>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question-card" data-question="3">
+            <div class="question">
+              <span>3.</span>
+              <p data-translate="q3">How do you create a function in JavaScript?</p>
+            </div>
+            <div class="options">
+              <label><input type="radio" name="q3" value="a"> <span data-translate="q3_opt_a">function = myFunction()</span></label>
+              <label><input type="radio" name="q3" value="b"> <span data-translate="q3_opt_b">function myFunction()</span></label>
+              <label><input type="radio" name="q3" value="c"> <span data-translate="q3_opt_c">create myFunction()</span></label>
+            </div>
+          </div>
+        </div>
+
+        <button id="submit-quiz" class="btn btn-primary" data-translate="submit_answers">Submit Answers</button>
+
+        <!-- Results -->
+        <div id="quiz-results" class="quiz-results hidden">
+          <h3 data-translate="your_results">Your Results</h3>
+          <div class="score">
+            <span id="score">0</span>/3 <span data-translate="correct_answers">correct answers</span>
+          </div>
+          <div class="feedback">
+            <p id="feedback-message"></p>
+          </div>
+          <div class="rating">
+            <p data-translate="rate_quiz">Rate this quiz:</p>
+            <div class="stars">
+              <i class="fas fa-star" data-rating="1"></i>
+              <i class="fas fa-star" data-rating="2"></i>
+              <i class="fas fa-star" data-rating="3"></i>
+              <i class="fas fa-star" data-rating="4"></i>
+              <i class="fas fa-star" data-rating="5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-translate="copyright">&copy; 2025 The Best Team Learning. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/questions.js"></script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+
+      document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

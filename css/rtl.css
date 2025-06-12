@@ -1,0 +1,31 @@
+/* تنسيقات خاصة للغة العربية */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .navbar .container,
+[dir="rtl"] .features-grid,
+[dir="rtl"] .hero-buttons {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="rtl"] .language-switcher {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+[dir="rtl"] .feature-card i,
+[dir="rtl"] .hero-title,
+[dir="rtl"] .hero-subtitle,
+[dir="rtl"] .section-title {
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .hero::before {
+    transform: scaleX(-1);
+}
